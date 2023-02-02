@@ -6,22 +6,22 @@ package clases;
 
 public class Seguro {
     //Declaraciopn de varibles
-    int id_seguros;
+    int id_seguro;
     String tipo;
     int precio;
     //Metodo Constructor
     Seguro(int id, String tp, int prc){
-        id_seguros=id;
+        id_seguro=id;
         tipo=tp;
         precio=prc;
     }
     //Metodos setter and getter
     public int getId_seguros() {
-        return id_seguros;
+        return id_seguro;
     }
 
-    public void setId_seguros(int id_seguros) {
-        this.id_seguros = id_seguros;
+    public void setId_seguros(int id) {
+        this.id_seguro = id;
     }
 
     public String getTipo() {
