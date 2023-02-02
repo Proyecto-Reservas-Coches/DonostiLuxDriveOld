@@ -1,6 +1,7 @@
 package clases;
 
 public class Coche {
+    //Declaracion de variables
     private int id_coche;
     private String matricula;
     private int caballos;
