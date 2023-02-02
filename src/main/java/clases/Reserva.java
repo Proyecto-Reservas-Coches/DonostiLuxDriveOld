@@ -5,6 +5,7 @@ public class Reserva {
         int id_reserva;
         int id_usuario;
         int id_coche;
+        int id_seguro;
         String localizacion;
         String fechaIn;
         String fechaFin;
@@ -12,10 +13,11 @@ public class Reserva {
         boolean chofer;
 
     //Metodo Constructor
-    Reserva(int id,int id_usuario,int id_coche, String loca, String fIn, String fFin, String hr, boolean chf){
+    Reserva(int id,int id_usuario,int id_coche, int id_seguro, String loca, String fIn, String fFin, String hr, boolean chf){
         id_reserva=id;
         this.id_usuario=id_usuario;
         this.id_coche=id_coche;
+        this.id_seguro=id_seguro;
         localizacion=loca;
         fechaIn=fIn;
         fechaFin=fFin;
