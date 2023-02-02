@@ -22,6 +22,7 @@ public class Usuario {
 
     }
     enum tipo {n, a};
+    //Metodos setter and getter
 
     public int getId_usuario() {
         return id_usuario;

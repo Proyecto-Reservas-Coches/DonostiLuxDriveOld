@@ -7,15 +7,15 @@ public class Coche {
     private int caballos;
     private String color;
     private int precioBase;
-
-    private Coche(int id,String matr, int cbll, String cl, int prBase ){
-        setId_coche(id);
-        setMatricula(matr);
-        setCaballos(cbll);
-        setColor(cl);
-        setPrecioBase(prBase);
+    //Metodo Constructor
+    public Coche(int id,String matr, int cbll, String cl, int prBase ){
+        id_coche=id;
+        matricula= matr;
+        caballos=cbll;
+        color=cl;
+        precioBase=prBase;
     }
-
+    //Metodos setter and getter
     public int getId_coche() {
         return id_coche;
     }
