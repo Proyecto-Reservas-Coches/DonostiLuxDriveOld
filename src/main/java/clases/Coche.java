@@ -6,16 +6,27 @@ public class Coche {
     private String matricula;
     private int caballos;
     private String color;
-    private int precioBase;
+    private int ano;
+    private int precio_base;
     //Metodo Constructor
-    public Coche(int id,String matr, int cbll, String cl, int prBase ){
+    public Coche(int id,String matr, int cbll, String cl,int a, int prBase ){
         id_coche=id;
         matricula= matr;
         caballos=cbll;
         color=cl;
-        precioBase=prBase;
+        ano=a;
+        precio_base=prBase;
     }
     //Metodos setter and getter
+
+    public int getAno() {
+        return ano;
+    }
+
+    public void setAno(int ano) {
+        this.ano = ano;
+    }
+
     public int getId_coche() {
         return id_coche;
     }
@@ -49,10 +60,10 @@ public class Coche {
     }
 
     public int getPrecioBase() {
-        return precioBase;
+        return precio_base;
     }
 
-    public void setPrecioBase(int precioBase) {
-        this.precioBase = precioBase;
+    public void setPrecioBase(int precio_base) {
+        this.precio_base = precio_base;
     }
 }
