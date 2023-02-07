@@ -22,13 +22,15 @@
     -fx-padding-bottom: 1em;
 }
 
-.button {
-    /* -fx-background-color: #007bff; */
-    -fx-text-fill: white;
-    -fx-font-weight: 700;
-    -fx-background-radius: 0.25em;
-    -fx-padding: 0.375em 0.75em;
-    /* -fx-pref-width: 100%; */
+#boton-alquilar{
+               background-color: #00FF00;
+               color: #FFFFFF;
+               padding: 10px 20px;
+             }
+#boton-info{
+background-color: #0000FF;
+  color: #FFFFFF;
+  padding: 10px 20px;
 }
 
 .vbox {
