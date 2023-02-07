@@ -1,4 +1,12 @@
 
+.pane{
+    -fx-background-color:linear-gradient(to bottom,
+      derive(red,80%),
+      derive(black,90%)
+      );
+
+}
+
 .titulo{
 
     -fx-background-color:linear-gradient(to left, #a57676 , #000000 );
