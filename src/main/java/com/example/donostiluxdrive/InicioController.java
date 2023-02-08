@@ -13,6 +13,8 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class InicioController {
+    private Stage stage;
+
 
     @FXML
     private Button CochesButton;
@@ -30,16 +32,24 @@ public class InicioController {
     private Button SignInButton;
 
     @FXML
-    void goToCoches(ActionEvent event) throws IOException {
-        CochesButtonNav.setOnAction(e -> InicioApplication.);
-        VBox layout = new VBox(10);
-        Stage window = new Stage();
-        FXMLLoader fxmlLoader = new FXMLLoader(InicioApplication.class.getResource("coches-view.xml"));
-        Scene scene2 = new Scene(fxmlLoader.load());
-        window.setTitle("Coches");
-        window.setScene(scene2);
-        window.show();
+    void goToCoches() throws IOException {
+        CochesButtonNav.setOnAction(event -> {
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("InfoCoche-view.fxml"));
+                Parent root = fxmlLoader.load();
+                Scene scene = new Scene(root);
+                stage.setScene(scene);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
     }
+
+    public void setStage(Stage stage) {
+        this.stage = stage;
+    }
+
+
 
 
     @FXML
