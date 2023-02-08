@@ -3,115 +3,65 @@
 <?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="750.0" prefWidth="1350.0" styleClass="backgroundColor" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PaginaInicio.HelloApplication">
-   <children>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <AnchorPane prefHeight="950.0" prefWidth="1300.0" styleClass="backgroundColor" stylesheets="@estilo.css">
          <children>
-            <ImageView fitHeight="959.0" fitWidth="1351.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../img/seguros-img.png" />
-               </image>
-            </ImageView>
-            <Pane prefHeight="830.0" prefWidth="1351.0" style="-fx-background-color: rgba(15, 15, 15, 0.7);">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <Text fill="#9e4444" layoutX="149.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titular" text="SEGUROS">
-                     <font>
-                        <Font name="Impact" size="77.0" />
-                     </font>
-                  </Text>
-                  <HBox layoutX="149.0" layoutY="132.0" prefHeight="514.0" prefWidth="1069.0" spacing="80.0">
-                     <opaqueInsets>
-                        <Insets />
-                     </opaqueInsets>
+                  <ImageView fitHeight="1033.0" fitWidth="1367.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/fondo-seguros.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutY="-2.0" prefHeight="1000.0" prefWidth="1351.0" style="-fx-background-color: rgba(15, 15, 15, 0.8);">
                      <children>
-                        <VBox alignment="CENTER" prefHeight="501.0" prefWidth="300.0" style="-fx-background-radius: 8px;" styleClass="card-seguros-estandar" stylesheets="@estilo.css">
+                        <Text layoutX="160.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titular" text="SEGUROS">
+                           <font>
+                              <Font name="Impact" size="77.0" />
+                           </font>
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.5" green="0.10499999672174454" blue="0.10499999672174454" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.5803921818733215" green="0.2078431397676468" blue="0.2078431397676468" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Text>
+                        <HBox layoutX="160.0" layoutY="268.0" prefHeight="514.0" prefWidth="1057.0" spacing="56.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
                            <children>
-                              <Label text="ESTANDAR" textFill="#fcfcfc">
-                                 <font>
-                                    <Font name="Impact" size="40.0" />
-                                 </font>
-                                 <VBox.margin>
-                                    <Insets bottom="24.0" />
-                                 </VBox.margin>
-                              </Label>
-                              <Label layoutX="71.0" layoutY="50.0" text="- Incluido -" textFill="#fcff4d">
-                                 <font>
-                                    <Font name="Noto Sans Condensed Bold" size="32.0" />
-                                 </font>
-                              </Label>
-                              <VBox prefHeight="358.0" prefWidth="282.0">
+                              <VBox alignment="CENTER" prefHeight="514.0" prefWidth="315.0" style="-fx-background-radius: 8px;" styleClass="card-seguros-estandar" stylesheets="@estilo.css">
                                  <children>
-                                    <Hyperlink lineSpacing="1.5" prefHeight="70.0" prefWidth="222.0" text="■  Seguro de responsabilidad     civil" textFill="WHITE" wrapText="true">
-                                       <font>
-                                          <Font name="Noto Sans Condensed" size="17.0" />
-                                       </font>
-                                       <VBox.margin>
-                                          <Insets left="36.0" right="20.0" />
-                                       </VBox.margin>
-                                    </Hyperlink>
-                                    <Hyperlink lineSpacing="1.5" prefHeight="63.0" prefWidth="226.0" text="■  Seguro de exención parcial de responsabilidad de daños" textFill="WHITE" wrapText="true">
-                                       <font>
-                                          <Font name="Noto Sans Condensed" size="17.0" />
-                                       </font>
-                                       <VBox.margin>
-                                          <Insets left="36.0" right="20.0" />
-                                       </VBox.margin>
-                                    </Hyperlink>
-                                    <Hyperlink disable="true" lineSpacing="1.5" prefHeight="64.0" prefWidth="226.0" text="■  Seguro frente al robo con franquicia" textFill="WHITE" wrapText="true">
-                                       <font>
-                                          <Font name="Noto Sans Condensed" size="17.0" />
-                                       </font>
-                                       <VBox.margin>
-                                          <Insets left="36.0" right="20.0" />
-                                       </VBox.margin>
-                                    </Hyperlink>
-                                    <Hyperlink disable="true" layoutX="18.0" layoutY="152.0" lineSpacing="1.5" prefHeight="61.0" prefWidth="226.0" text="■  Seguro de accidentes personales" textFill="WHITE" wrapText="true">
-                                       <font>
-                                          <Font name="Noto Sans Condensed" size="17.0" />
-                                       </font>
-                                       <VBox.margin>
-                                          <Insets left="36.0" right="20.0" />
-                                       </VBox.margin>
-                                    </Hyperlink>
-                                    <Hyperlink disable="true" layoutX="10.0" layoutY="164.0" lineSpacing="1.5" prefHeight="50.0" prefWidth="226.0" text="■  Asistencia en carretera" textFill="WHITE" wrapText="true">
-                                       <font>
-                                          <Font name="Noto Sans Condensed" size="17.0" />
-                                       </font>
-                                       <VBox.margin>
-                                          <Insets left="36.0" right="20.0" />
-                                       </VBox.margin>
-                                    </Hyperlink>
-                                    <Hyperlink disable="true" layoutX="10.0" layoutY="176.0" lineSpacing="1.5" prefHeight="53.0" prefWidth="226.0" text="■  Otros seguros de alquiler" textFill="WHITE" wrapText="true">
-                                       <font>
-                                          <Font name="Noto Sans Condensed" size="17.0" />
-                                       </font>
-                                       <VBox.margin>
-                                          <Insets left="36.0" right="20.0" />
-                                       </VBox.margin>
-                                    </Hyperlink>
-                                 </children>
-                                 <VBox.margin>
-                                    <Insets />
-                                 </VBox.margin>
-                              </VBox>
-                           </children>
-                        </VBox>
-                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="501.0" prefWidth="299.0" style="-fx-background-radius: 10;" stylesheets="@estilo.css">
-                           <children>
-                              <VBox alignment="CENTER" prefHeight="566.0" prefWidth="293.0" style="-fx-background-radius: 8px;" styleClass="card-seguros-a-todo-riesgo" stylesheets="@estilo.css">
-                                 <children>
-                                    <Label text="A TODO RIESGO" textFill="#fcfcfc" underline="true">
+                                    <Label text="ESTANDAR" textFill="#fcfcfc">
                                        <font>
                                           <Font name="Impact" size="40.0" />
                                        </font>
@@ -119,12 +69,12 @@
                                           <Insets bottom="24.0" />
                                        </VBox.margin>
                                     </Label>
-                                    <Label text="- 50€/dia -" textFill="#fcff4d">
+                                    <Label layoutX="71.0" layoutY="50.0" text="- Incluido -" textFill="#fcff4d">
                                        <font>
                                           <Font name="Noto Sans Condensed Bold" size="32.0" />
                                        </font>
                                     </Label>
-                                    <VBox prefHeight="358.0" prefWidth="308.0" stylesheets="@estilo.css">
+                                    <VBox prefHeight="358.0" prefWidth="282.0">
                                        <children>
                                           <Hyperlink lineSpacing="1.5" prefHeight="70.0" prefWidth="222.0" text="■  Seguro de responsabilidad     civil" textFill="WHITE" wrapText="true">
                                              <font>
@@ -142,7 +92,7 @@
                                                 <Insets left="36.0" right="20.0" />
                                              </VBox.margin>
                                           </Hyperlink>
-                                          <Hyperlink lineSpacing="1.5" prefHeight="64.0" prefWidth="226.0" text="■  Seguro frente al robo con franquicia" textFill="WHITE" wrapText="true">
+                                          <Hyperlink disable="true" lineSpacing="1.5" prefHeight="64.0" prefWidth="226.0" text="■  Seguro frente al robo con franquicia" textFill="WHITE" wrapText="true">
                                              <font>
                                                 <Font name="Noto Sans Condensed" size="17.0" />
                                              </font>
@@ -150,7 +100,7 @@
                                                 <Insets left="36.0" right="20.0" />
                                              </VBox.margin>
                                           </Hyperlink>
-                                          <Hyperlink layoutX="18.0" layoutY="152.0" lineSpacing="1.5" prefHeight="61.0" prefWidth="226.0" text="■  Seguro de accidentes personales" textFill="WHITE" wrapText="true">
+                                          <Hyperlink disable="true" layoutX="18.0" layoutY="152.0" lineSpacing="1.5" prefHeight="61.0" prefWidth="226.0" text="■  Seguro de accidentes personales" textFill="WHITE" wrapText="true">
                                              <font>
                                                 <Font name="Noto Sans Condensed" size="17.0" />
                                              </font>
@@ -181,98 +131,203 @@
                                     </VBox>
                                  </children>
                               </VBox>
-                           </children>
-                        </VBox>
-                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="466.0" prefWidth="298.0" style="-fx-background-radius: 8px;" stylesheets="@estilo.css">
-                           <children>
-                              <VBox alignment="CENTER" prefHeight="585.0" prefWidth="298.0" style="-fx-background-radius: 8px;" styleClass="card-seguros-elite" stylesheets="@estilo.css">
+                              <VBox layoutX="10.0" layoutY="10.0" prefHeight="514.0" prefWidth="315.0" style="-fx-background-radius: 10;" stylesheets="@estilo.css">
                                  <children>
-                                    <Label text="ELÍTE" textFill="#fcfcfc">
-                                       <font>
-                                          <Font name="Impact" size="40.0" />
-                                       </font>
-                                       <VBox.margin>
-                                          <Insets bottom="24.0" />
-                                       </VBox.margin>
-                                    </Label>
-                                    <Label text="- 100€/dia -" textFill="#fcff4d">
-                                       <font>
-                                          <Font name="Noto Sans Condensed Bold" size="32.0" />
-                                       </font>
-                                    </Label>
-                                    <VBox prefHeight="358.0" prefWidth="309.0">
+                                    <VBox alignment="CENTER" prefHeight="566.0" prefWidth="309.0" style="-fx-background-radius: 8px;" styleClass="card-seguros-a-todo-riesgo" stylesheets="@estilo.css">
                                        <children>
-                                          <Hyperlink lineSpacing="1.5" prefHeight="70.0" prefWidth="222.0" text="■  Seguro de responsabilidad     civil" textFill="WHITE" wrapText="true">
+                                          <Label text="A TODO RIESGO" textFill="#fcfcfc" underline="true">
                                              <font>
-                                                <Font name="Noto Sans Condensed" size="17.0" />
+                                                <Font name="Impact" size="40.0" />
                                              </font>
                                              <VBox.margin>
-                                                <Insets left="36.0" right="20.0" />
+                                                <Insets bottom="24.0" />
                                              </VBox.margin>
-                                          </Hyperlink>
-                                          <Hyperlink accessibleRole="TEXT" lineSpacing="1.5" prefHeight="63.0" prefWidth="226.0" text="■  Seguro de exención parcial de responsabilidad de daños" textFill="WHITE" wrapText="true">
+                                          </Label>
+                                          <Label text="- 50€/dia -" textFill="#fcff4d">
                                              <font>
-                                                <Font name="Noto Sans Condensed" size="17.0" />
+                                                <Font name="Noto Sans Condensed Bold" size="32.0" />
                                              </font>
+                                          </Label>
+                                          <VBox prefHeight="358.0" prefWidth="308.0" stylesheets="@estilo.css">
+                                             <children>
+                                                <Hyperlink lineSpacing="1.5" prefHeight="70.0" prefWidth="222.0" text="■  Seguro de responsabilidad     civil" textFill="WHITE" wrapText="true">
+                                                   <font>
+                                                      <Font name="Noto Sans Condensed" size="17.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="36.0" right="20.0" />
+                                                   </VBox.margin>
+                                                </Hyperlink>
+                                                <Hyperlink lineSpacing="1.5" prefHeight="63.0" prefWidth="226.0" text="■  Seguro de exención parcial de responsabilidad de daños" textFill="WHITE" wrapText="true">
+                                                   <font>
+                                                      <Font name="Noto Sans Condensed" size="17.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="36.0" right="20.0" />
+                                                   </VBox.margin>
+                                                </Hyperlink>
+                                                <Hyperlink lineSpacing="1.5" prefHeight="64.0" prefWidth="226.0" text="■  Seguro frente al robo con franquicia" textFill="WHITE" wrapText="true">
+                                                   <font>
+                                                      <Font name="Noto Sans Condensed" size="17.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="36.0" right="20.0" />
+                                                   </VBox.margin>
+                                                </Hyperlink>
+                                                <Hyperlink layoutX="18.0" layoutY="152.0" lineSpacing="1.5" prefHeight="61.0" prefWidth="226.0" text="■  Seguro de accidentes personales" textFill="WHITE" wrapText="true">
+                                                   <font>
+                                                      <Font name="Noto Sans Condensed" size="17.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="36.0" right="20.0" />
+                                                   </VBox.margin>
+                                                </Hyperlink>
+                                                <Hyperlink disable="true" layoutX="10.0" layoutY="164.0" lineSpacing="1.5" prefHeight="50.0" prefWidth="226.0" text="■  Asistencia en carretera" textFill="WHITE" wrapText="true">
+                                                   <font>
+                                                      <Font name="Noto Sans Condensed" size="17.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="36.0" right="20.0" />
+                                                   </VBox.margin>
+                                                </Hyperlink>
+                                                <Hyperlink disable="true" layoutX="10.0" layoutY="176.0" lineSpacing="1.5" prefHeight="53.0" prefWidth="226.0" text="■  Otros seguros de alquiler" textFill="WHITE" wrapText="true">
+                                                   <font>
+                                                      <Font name="Noto Sans Condensed" size="17.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="36.0" right="20.0" />
+                                                   </VBox.margin>
+                                                </Hyperlink>
+                                             </children>
                                              <VBox.margin>
-                                                <Insets left="36.0" right="20.0" />
+                                                <Insets />
                                              </VBox.margin>
-                                          </Hyperlink>
-                                          <Hyperlink lineSpacing="1.5" prefHeight="64.0" prefWidth="226.0" text="■  Seguro frente al robo con franquicia" textFill="WHITE" wrapText="true">
-                                             <font>
-                                                <Font name="Noto Sans Condensed" size="17.0" />
-                                             </font>
-                                             <VBox.margin>
-                                                <Insets left="36.0" right="20.0" />
-                                             </VBox.margin>
-                                          </Hyperlink>
-                                          <Hyperlink layoutX="18.0" layoutY="152.0" lineSpacing="1.5" prefHeight="61.0" prefWidth="226.0" text="■  Seguro de accidentes personales" textFill="WHITE" wrapText="true">
-                                             <font>
-                                                <Font name="Noto Sans Condensed" size="17.0" />
-                                             </font>
-                                             <VBox.margin>
-                                                <Insets left="36.0" right="20.0" />
-                                             </VBox.margin>
-                                          </Hyperlink>
-                                          <Hyperlink layoutX="10.0" layoutY="164.0" lineSpacing="1.5" prefHeight="50.0" prefWidth="226.0" text="■  Asistencia en carretera" textFill="WHITE" wrapText="true">
-                                             <font>
-                                                <Font name="Noto Sans Condensed" size="17.0" />
-                                             </font>
-                                             <VBox.margin>
-                                                <Insets left="36.0" right="20.0" />
-                                             </VBox.margin>
-                                          </Hyperlink>
-                                          <Hyperlink layoutX="10.0" layoutY="176.0" lineSpacing="1.5" prefHeight="53.0" prefWidth="226.0" text="■  Otros seguros de alquiler" textFill="WHITE" wrapText="true">
-                                             <font>
-                                                <Font name="Noto Sans Condensed" size="17.0" />
-                                             </font>
-                                             <VBox.margin>
-                                                <Insets left="36.0" right="20.0" />
-                                             </VBox.margin>
-                                          </Hyperlink>
+                                          </VBox>
                                        </children>
-                                       <VBox.margin>
-                                          <Insets />
-                                       </VBox.margin>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="10.0" prefHeight="514.0" prefWidth="315.0" style="-fx-background-radius: 8px;" stylesheets="@estilo.css">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="585.0" prefWidth="298.0" style="-fx-background-radius: 8px;" styleClass="card-seguros-elite" stylesheets="@estilo.css">
+                                       <children>
+                                          <Label text="ELÍTE" textFill="#fcfcfc">
+                                             <font>
+                                                <Font name="Impact" size="40.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets bottom="24.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <Label text="- 100€/dia -" textFill="#fcff4d">
+                                             <font>
+                                                <Font name="Noto Sans Condensed Bold" size="32.0" />
+                                             </font>
+                                          </Label>
+                                          <VBox prefHeight="358.0" prefWidth="309.0">
+                                             <children>
+                                                <Hyperlink lineSpacing="1.5" prefHeight="70.0" prefWidth="222.0" text="■  Seguro de responsabilidad     civil" textFill="WHITE" wrapText="true">
+                                                   <font>
+                                                      <Font name="Noto Sans Condensed" size="17.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="36.0" right="20.0" />
+                                                   </VBox.margin>
+                                                </Hyperlink>
+                                                <Hyperlink accessibleRole="TEXT" lineSpacing="1.5" prefHeight="63.0" prefWidth="226.0" text="■  Seguro de exención parcial de responsabilidad de daños" textFill="WHITE" wrapText="true">
+                                                   <font>
+                                                      <Font name="Noto Sans Condensed" size="17.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="36.0" right="20.0" />
+                                                   </VBox.margin>
+                                                </Hyperlink>
+                                                <Hyperlink lineSpacing="1.5" prefHeight="64.0" prefWidth="226.0" text="■  Seguro frente al robo con franquicia" textFill="WHITE" wrapText="true">
+                                                   <font>
+                                                      <Font name="Noto Sans Condensed" size="17.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="36.0" right="20.0" />
+                                                   </VBox.margin>
+                                                </Hyperlink>
+                                                <Hyperlink layoutX="18.0" layoutY="152.0" lineSpacing="1.5" prefHeight="61.0" prefWidth="226.0" text="■  Seguro de accidentes personales" textFill="WHITE" wrapText="true">
+                                                   <font>
+                                                      <Font name="Noto Sans Condensed" size="17.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="36.0" right="20.0" />
+                                                   </VBox.margin>
+                                                </Hyperlink>
+                                                <Hyperlink layoutX="10.0" layoutY="164.0" lineSpacing="1.5" prefHeight="50.0" prefWidth="226.0" text="■  Asistencia en carretera" textFill="WHITE" wrapText="true">
+                                                   <font>
+                                                      <Font name="Noto Sans Condensed" size="17.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="36.0" right="20.0" />
+                                                   </VBox.margin>
+                                                </Hyperlink>
+                                                <Hyperlink layoutX="10.0" layoutY="176.0" lineSpacing="1.5" prefHeight="53.0" prefWidth="226.0" text="■  Otros seguros de alquiler" textFill="WHITE" wrapText="true">
+                                                   <font>
+                                                      <Font name="Noto Sans Condensed" size="17.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets left="36.0" right="20.0" />
+                                                   </VBox.margin>
+                                                </Hyperlink>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </VBox>
+                                       </children>
                                     </VBox>
                                  </children>
                               </VBox>
                            </children>
-                        </VBox>
+                        </HBox>
+                        <Button layoutX="638.0" layoutY="832.0" mnemonicParsing="false" stylesheets="@estilo.css" text="CERRAR" textFill="#681212">
+                           <font>
+                              <Font name="Noto Sans Condensed Bold" size="21.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="boton-inicio" />
+                              <String fx:value="boton-cerrar" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="SignInButton1" layoutX="1101.0" layoutY="69.0" mnemonicParsing="false" onAction="#goToSignIn" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: none;" styleClass="sing-up" text="Sign in " textFill="#fcfcfc">
+                           <font>
+                              <Font name="Noto Serif Condensed" size="20.0" />
+                           </font>
+                        </Button>
                      </children>
-                  </HBox>
-                  <Button layoutX="631.0" layoutY="676.0" mnemonicParsing="false" stylesheets="@estilo.css" text="CERRAR" textFill="#681212">
-                     <font>
-                        <Font name="Noto Sans Condensed Bold" size="21.0" />
-                     </font>
-                     <styleClass>
-                        <String fx:value="boton-inicio" />
-                        <String fx:value="boton-cerrar" />
-                     </styleClass>
-                  </Button>
+                  </Pane>
+                  <ButtonBar layoutX="141.0" layoutY="64.0" prefHeight="47.0" prefWidth="360.0">
+                     <buttons>
+                        <Button fx:id="InicioButtonNav" mnemonicParsing="false" onAction="#goToInicio" style="-fx-background-color: #252525;" text="Inicio" textFill="#fcfcfc">
+                           <font>
+                              <Font name="Noto Serif Condensed" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="CochesButtonNav" graphicTextGap="10.0" mnemonicParsing="false" onAction="#goToCoches" style="-fx-background-color: #252525;" text="Coches" textFill="#fcfcfc">
+                           <font>
+                              <Font name="Noto Serif Condensed" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="SegurosButtonNav" mnemonicParsing="false" onAction="#goToSeguros" prefWidth="132.0" style="-fx-background-color: #252525;" styleClass="active" text="Seguros" textFill="#fcfcfc">
+                           <font>
+                              <Font name="Noto Serif Condensed Bold" size="21.0" />
+                           </font>
+                        </Button>
+                     </buttons>
+                  </ButtonBar>
+                  <ImageView fitHeight="101.0" fitWidth="95.0" layoutX="61.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/LogoCorto.png" />
+                     </image>
+                  </ImageView>
                </children>
-            </Pane>
+            </AnchorPane>
          </children>
       </AnchorPane>
-   </children>
-</AnchorPane>
+   </content>
+</ScrollPane>
