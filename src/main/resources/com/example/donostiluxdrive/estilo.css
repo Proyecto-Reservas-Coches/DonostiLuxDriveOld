@@ -40,7 +40,7 @@
 
     .card-seguros-estandar{
 
-     -fx-background-color:linear-gradient(from 25% 25% to 100% 100%, #821b1b, #ca6464);
+                -fx-background-color:linear-gradient(from 25% 25% to 100% 100%, #821b1b, #953535);
 
 
     }
@@ -49,7 +49,7 @@
      .card-seguros-a-todo-riesgo{
 
 
-        -fx-background-color:linear-gradient(from 25% 25% to 100% 100%, #821b1b, #ca6464);
+                -fx-background-color:linear-gradient(from 25% 25% to 100% 100%, #821b1b, #953535);
 
 
 -fx-border-width: 4px 4px 4px 4px;
@@ -61,7 +61,7 @@
          .card-seguros-elite{
 
 
-                -fx-background-color:linear-gradient(from 25% 25% to 100% 100%, #821b1b, #ca6464);
+                -fx-background-color:linear-gradient(from 25% 25% to 100% 100%, #821b1b, #953535);
 
 
 
@@ -90,3 +90,12 @@
        .boton-log-in{ -fx-border-width: 4px 4px 4px 4px;
                                      -fx-border-color: #681212;
                                      -fx-border-style: solid;}
+
+
+                                     .card-title{
+
+                                     -fx-text-fill:white;}
+
+
+
+                                     .card-parrafo{-fx-line-height: 2px;}

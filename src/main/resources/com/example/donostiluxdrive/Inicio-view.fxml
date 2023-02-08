@@ -7,10 +7,13 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1250.0" styleClass="backgroundColor" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.donostiluxdrive.InicioController">
+<AnchorPane prefHeight="750.0" prefWidth="1300.0" styleClass="backgroundColor" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.donostiluxdrive.InicioController">
    <children>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
          <children>
@@ -50,14 +53,14 @@
                         <Font name="Impact" size="77.0" />
                      </font>
                   </Text>
-                  <Button fx:id="CochesButton" layoutX="141.0" layoutY="483.0" mnemonicParsing="false" onAction="#goToCoches" styleClass="boton-inicio" stylesheets="@estilo.css" text="MIRAR NUESTRO CATÁLOGO!" textFill="#9e4444">
+                  <Button fx:id="CochesButton" layoutX="141.0" layoutY="483.0" mnemonicParsing="false" onAction="#goToCoches" styleClass="boton-inicio" stylesheets="@estilo.css" text="MIRAR NUESTRO CATÁLOGO!" textFill="#722424">
                      <font>
                         <Font name="Noto Sans Condensed Bold" size="21.0" />
                      </font>
                   </Button>
                   <ButtonBar layoutX="919.0" layoutY="55.0" prefHeight="45.0" prefWidth="217.0">
                      <buttons>
-                        <Button fx:id="SignInButton" mnemonicParsing="false" onAction="#goToSignIn" prefHeight="45.0" prefWidth="161.0" style="-fx-background-color: none;" styleClass="sing-up" text="Sign in " textFill="#fcfcfc">
+                        <Button fx:id="SignInButton" mnemonicParsing="false" onAction="#goToSignIn" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: none;" styleClass="sing-up" text="Sign in " textFill="#fcfcfc">
                            <font>
                               <Font name="Noto Serif Condensed" size="20.0" />
                            </font>
@@ -69,17 +72,43 @@
                         <Font name="Impact" size="77.0" />
                      </font>
                   </Text>
-                  <Label layoutX="141.0" layoutY="646.0" lineSpacing="1.0" prefHeight="101.0" prefWidth="748.0" text="Empresa líder en la fabricación de automóviles de lujo con un enfoque en diseño, tecnología y experiencia de conducción superior. Ofrecemos modelos únicos para clientes exigentes." textFill="#eeeeee" wrapText="true">
+                  <Label layoutX="140.0" layoutY="614.0" lineSpacing="1.0" prefHeight="101.0" prefWidth="748.0" text="Empresa líder en la fabricación de automóviles de lujo con un enfoque en diseño, tecnología y experiencia de conducción superior. Ofrecemos modelos únicos para clientes exigentes." textFill="#eeeeee" wrapText="true">
                      <font>
                         <Font name="Noto Serif Condensed" size="21.0" />
                      </font>
                   </Label>
-                  <Text fill="#9e4444" layoutX="141.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titulo" text="BIENVENIDOS,">
+                  <Text layoutX="141.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titulo" text="BIENVENIDOS,">
                      <font>
                         <Font name="Impact" size="77.0" />
                      </font>
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.5098039507865906" green="0.10588235408067703" blue="0.10588235408067703" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.5799999833106995" green="0.20880000293254852" blue="0.20880000293254852" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
                   </Text>
-                  <ImageView fitHeight="323.0" fitWidth="326.0" layoutX="813.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="468.0" fitWidth="543.0" layoutX="966.0" layoutY="431.0" opacity="0.05" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/LogoCorto.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="468.0" fitWidth="543.0" layoutX="-151.0" layoutY="101.0" opacity="0.05" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/LogoCorto.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="458.0" fitWidth="442.0" layoutX="698.0" layoutY="141.0" opacity="0.78" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../img/LogoCompleto.png" />
                      </image>
