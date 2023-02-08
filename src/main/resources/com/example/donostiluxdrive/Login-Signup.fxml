@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane minWidth="1225.0" prefHeight="800.0" prefWidth="1225.0" style="-fx-min-width: 900px; -fx-min-height: 500;" styleClass="backgroundColor" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PaginaInicio.InicioView">
+<AnchorPane minWidth="1225.0" prefHeight="800.0" prefWidth="1225.0" style="-fx-min-width: 900px; -fx-min-height: 500;" styleClass="backgroundColor" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="v">
    <children>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
          <children>
