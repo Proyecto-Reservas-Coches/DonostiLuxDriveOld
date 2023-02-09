@@ -15,6 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+
 <ScrollPane prefHeight="600.0" prefWidth="1250.0" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <content>
       <AnchorPane prefHeight="600.0" prefWidth="1250.0" style="-fx-background-color: rgba(15, 15, 15, 0.651);">
