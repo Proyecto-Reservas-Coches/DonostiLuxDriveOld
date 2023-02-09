@@ -20,7 +20,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.donostiluxdrive.SegurosController">
    <content>
       <AnchorPane prefHeight="950.0" prefWidth="1300.0" styleClass="backgroundColor" stylesheets="@estilo.css">
          <children>
@@ -294,7 +294,7 @@
                               <String fx:value="boton-cerrar" />
                            </styleClass>
                         </Button>
-                        <Button fx:id="SignInButton1" layoutX="1101.0" layoutY="69.0" mnemonicParsing="false" onAction="#goToSignIn" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: none;" styleClass="sing-up" text="Sign in " textFill="#fcfcfc">
+                        <Button fx:id="SignInButton" layoutX="1101.0" layoutY="69.0" mnemonicParsing="false" onAction="#goToSignIn" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: none;" styleClass="sing-up" text="Sign in " textFill="#fcfcfc">
                            <font>
                               <Font name="Noto Serif Condensed" size="20.0" />
                            </font>

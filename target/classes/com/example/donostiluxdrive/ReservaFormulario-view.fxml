@@ -24,7 +24,7 @@
                   <Rectangle2D />
                </viewport>
                <image>
-                  <Image url="@img/formulario-imagen.png" />
+                  <Image url="@../../../img/LogoCorto.png" />
                </image>
             </ImageView>
             <Pane prefHeight="639.0" prefWidth="597.0" style="-fx-background-color: rgba(15, 15, 15, 0.9);">

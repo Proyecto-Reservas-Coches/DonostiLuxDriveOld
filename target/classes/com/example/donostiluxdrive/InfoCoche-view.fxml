@@ -10,36 +10,27 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="861.0" prefWidth="1416.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="861.0" prefWidth="1416.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.donostiluxdrive.InfoCohesController">
    <content>
-      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="906.0" prefWidth="1434.0" style="-fx-min-width: 900; -fx-min-height: 500;" styleClass="pane" stylesheets="@estilo.css">
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="906.0" prefWidth="1434.0" style="-fx-min-width: 900; -fx-background-color: black; -fx-min-height: 500;">
          <children>
+            <ImageView fitHeight="1111.0" fitWidth="1264.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../img/coches-img.png" />
+               </image>
+            </ImageView>
             <Pane prefHeight="814.0" prefWidth="1325.0">
                <children>
                   <ImageView fitHeight="57.0" fitWidth="59.0" layoutX="34.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@img/1.png" />
+                        <Image url="@../../../img/LogoCorto.png" />
                      </image>
                   </ImageView>
-                  <ButtonBar layoutX="988.0" layoutY="50.0" prefHeight="45.0" prefWidth="220.0">
-                     <buttons>
-                        <Button mnemonicParsing="false" style="-fx-background-color: none;" text="Log in" textFill="#fcfcfc">
-                           <font>
-                              <Font name="Noto Serif Condensed" size="20.0" />
-                           </font>
-                        </Button>
-                        <Button mnemonicParsing="false" prefHeight="45.0" style="-fx-background-color: none;" styleClass="sing-up" text="Sign Up" textFill="#fcfcfc">
-                           <font>
-                              <Font name="Noto Serif Condensed" size="20.0" />
-                           </font>
-                        </Button>
-                     </buttons>
-                  </ButtonBar>
                   <Pane layoutX="3.0" layoutY="102.0" prefHeight="721.0" prefWidth="1325.0">
                      <children>
                         <ImageView fitHeight="291.0" fitWidth="660.0" layoutX="98.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../java/jesse-g-c-ANY0Pyj5X8Y-unsplash.jpg" />
+                              <Image url="@../../../img/BackgroundInicio.jpg" />
                            </image>
                         </ImageView>
                         <Label layoutX="98.0" layoutY="436.0" prefHeight="17.0" prefWidth="473.0" text="Marca:" textFill="WHITE">
@@ -77,17 +68,17 @@
                               <Font name="Impact" size="40.0" />
                            </font>
                         </Label>
-                        <Button layoutX="98.0" layoutY="176.0" mnemonicParsing="false" style="-fx-background-color: 255, 255, 255, 255;" text="&lt;" textFill="WHITE">
+                        <Button fx:id="MinusButton" layoutX="98.0" layoutY="176.0" mnemonicParsing="false" onAction="#goToBeforeImage" style="-fx-background-color: 255, 255, 255, 255;" text="&lt;" textFill="WHITE">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Button>
-                        <Button layoutX="531.0" layoutY="176.0" mnemonicParsing="false" style="-fx-background-color: 255, 255, 255, 255;" text="&gt;" textFill="WHITE">
+                        <Button fx:id="MayusButton" layoutX="531.0" layoutY="176.0" mnemonicParsing="false" onAction="#goToNextImage" style="-fx-background-color: 255, 255, 255, 255;" text="&gt;" textFill="WHITE">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Button>
-                        <Button layoutX="1028.0" layoutY="31.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="176.0" style="-fx-background-color: #9e4444;" text="ALQUILAR AHORA" textFill="WHITE">
+                        <Button fx:id="AlquilarButton" layoutX="1022.0" layoutY="27.0" mnemonicParsing="false" onAction="#goToReserva" prefHeight="47.0" prefWidth="176.0" style="-fx-background-color: #9e4444;" text="ALQUILAR AHORA" textFill="WHITE">
                            <font>
                               <Font name="Impact" size="20.0" />
                            </font>
@@ -99,52 +90,46 @@
                         </Label>
                         <ImageView fitHeight="106.0" fitWidth="179.0" layoutX="1024.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../java/jesse-g-c-ANY0Pyj5X8Y-unsplash.jpg" />
+                              <Image url="@../../../img/BackgroundInicio.jpg" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="106.0" fitWidth="179.0" layoutX="1026.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../java/jesse-g-c-ANY0Pyj5X8Y-unsplash.jpg" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="106.0" fitWidth="179.0" layoutX="1026.0" layoutY="460.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../../java/jesse-g-c-ANY0Pyj5X8Y-unsplash.jpg" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="105.0" fitWidth="177.0" layoutX="1026.0" layoutY="595.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../../java/jesse-g-c-ANY0Pyj5X8Y-unsplash.jpg" />
+                              <Image url="@../../../img/BackgroundInicio.jpg" />
                            </image>
                         </ImageView>
                      </children>
                   </Pane>
-                  <ButtonBar layoutX="120.0" layoutY="50.0" prefHeight="43.0" prefWidth="679.0">
-                     <buttons>
-                        <Button mnemonicParsing="false" style="-fx-background-color: #252525;" text="Inicio" textFill="#fcfcfc">
-                           <font>
-                              <Font name="Noto Serif Condensed Bold" size="21.0" />
-                           </font>
-                        </Button>
-                        <Button graphicTextGap="10.0" mnemonicParsing="false" style="-fx-background-color: #252525;" styleClass="active" text="Coches" textFill="#fcfcfc">
-                           <font>
-                              <Font name="Noto Serif Condensed" size="20.0" />
-                           </font>
-                        </Button>
-                        <Button mnemonicParsing="false" style="-fx-background-color: #252525;" text="Seguros" textFill="#fcfcfc">
-                           <font>
-                              <Font name="Noto Serif Condensed" size="20.0" />
-                           </font>
-                        </Button>
-                        <Button layoutX="143.0" layoutY="10.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="168.0" style="-fx-background-color: #252525;" text="Sobre nosotros" textFill="#fcfcfc">
-                           <font>
-                              <Font name="Noto Serif Condensed" size="20.0" />
-                           </font>
-                        </Button>
-                     </buttons>
-                  </ButtonBar>
                </children>
             </Pane>
+            <ButtonBar layoutX="920.0" layoutY="55.0" prefHeight="45.0" prefWidth="220.0">
+               <buttons>
+                  <Button fx:id="SignInButton" mnemonicParsing="false" onAction="#goToSignIn" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: #9e4444;" styleClass="sing-up" text="Sign in " textFill="#fcfcfc">
+                     <font>
+                        <Font name="Impact" size="20.0" />
+                     </font>
+                  </Button>
+               </buttons>
+            </ButtonBar>
+            <ButtonBar layoutX="131.0" layoutY="54.0" prefHeight="47.0" prefWidth="360.0">
+               <buttons>
+                  <Button fx:id="InicioButtonNav" mnemonicParsing="false" onAction="#goToInicio" style="-fx-background-color: #252525;" styleClass="active" text="Inicio" textFill="#fcfcfc">
+                     <font>
+                        <Font name="Noto Serif Condensed" size="21.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="CochesButtonNav" graphicTextGap="10.0" mnemonicParsing="false" onAction="#goToCoches" style="-fx-background-color: #252525;" text="Coches" textFill="#fcfcfc">
+                     <font>
+                        <Font name="Noto Serif Condensed" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="SegurosButtonNav" mnemonicParsing="false" onAction="#goToSeguros" prefWidth="132.0" style="-fx-background-color: #252525;" text="Seguros" textFill="#fcfcfc">
+                     <font>
+                        <Font name="Noto Serif Condensed" size="20.0" />
+                     </font>
+                  </Button>
+               </buttons>
+            </ButtonBar>
          </children>
       </AnchorPane>
    </content>
