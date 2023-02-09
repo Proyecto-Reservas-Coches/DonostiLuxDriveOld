@@ -15,7 +15,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane prefHeight="600.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+
+<ScrollPane prefHeight="600.0" prefWidth="1250.0" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <content>
       <AnchorPane prefHeight="600.0" prefWidth="1250.0" style="-fx-background-color: rgba(15, 15, 15, 0.651);">
          <children>
@@ -186,12 +187,12 @@
                <buttons>
                   <Button fx:id="InicioButtonNav" mnemonicParsing="false" onAction="#goToInicio" style="-fx-background-color: #252525;" text="Inicio" textFill="#fcfcfc">
                      <font>
-                        <Font name="Noto Serif Condensed Bold" size="21.0" />
+                        <Font name="Noto Serif Condensed" size="21.0" />
                      </font>
                   </Button>
                   <Button fx:id="CochesButtonNav" graphicTextGap="10.0" mnemonicParsing="false" onAction="#goToCoches" style="-fx-background-color: #252525;" styleClass="active" text="Coches" textFill="#fcfcfc">
                      <font>
-                        <Font name="Noto Serif Condensed" size="20.0" />
+                        <Font name="Noto Serif Condensed Bold" size="20.0" />
                      </font>
                   </Button>
                   <Button fx:id="SegurosButtonNav" mnemonicParsing="false" onAction="#goToSeguros" prefWidth="132.0" style="-fx-background-color: #252525;" text="Seguros" textFill="#fcfcfc">
