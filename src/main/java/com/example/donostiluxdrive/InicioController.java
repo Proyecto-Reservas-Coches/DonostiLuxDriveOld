@@ -18,26 +18,26 @@ import java.io.IOException;
 public class InicioController   {
     
     @FXML
-    private Button CochesButton;
+    private Button cochesButton;
 
     @FXML
-    private Button CochesButtonNav;
+    private Button cochesButtonNav;
 
     @FXML
-    private Button InicioButtonNav;
+    private Button inicioButtonNav;
 
     @FXML
-    private Button SegurosButtonNav;
+    private Button segurosButtonNav;
 
     @FXML
-    private Button SignInButton;
+    private Button signInButton;
 
     @FXML
     void goToCoches()   {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("Coches-view.fxml"));
             Scene scene = new Scene(root);
-            Stage stage = (Stage) CochesButtonNav.getScene().getWindow();
+            Stage stage = (Stage) cochesButtonNav.getScene().getWindow();
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
@@ -53,7 +53,7 @@ public class InicioController   {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("Inicio-view.fxml"));
             Scene scene = new Scene(root);
-            stage = (Stage) InicioButtonNav.getScene().getWindow();
+            stage = (Stage) inicioButtonNav.getScene().getWindow();
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
@@ -67,7 +67,7 @@ public class InicioController   {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("Seguros-view.fxml"));
             Scene scene = new Scene(root);
-            Stage stage = (Stage) SegurosButtonNav.getScene().getWindow();
+            Stage stage = (Stage) segurosButtonNav.getScene().getWindow();
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
@@ -81,7 +81,7 @@ public class InicioController   {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("LoginSignup-view.fxml"));
             Scene scene = new Scene(root);
-            Stage stage = (Stage) SignInButton.getScene().getWindow();
+            Stage stage = (Stage) signInButton.getScene().getWindow();
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {

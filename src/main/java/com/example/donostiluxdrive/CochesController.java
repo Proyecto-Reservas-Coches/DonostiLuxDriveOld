@@ -123,7 +123,7 @@ public class CochesController {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("ReservaFormulario-view.fxml"));
             Scene scene = new Scene(root);
-            Stage stage = (Stage) segurosButtonNav.getScene().getWindow();
+            Stage stage = (Stage) alquilarCoche0_0Button.getScene().getWindow();
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
