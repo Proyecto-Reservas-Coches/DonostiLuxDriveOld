@@ -31,7 +31,7 @@
                   </ImageView>
                   <Pane layoutY="-2.0" prefHeight="1000.0" prefWidth="1351.0" style="-fx-background-color: rgba(15, 15, 15, 0.8);">
                      <children>
-                        <Text layoutX="160.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titular" text="SEGUROS">
+                        <Text layoutX="130.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titular" text="SEGUROS">
                            <font>
                               <Font name="Impact" size="77.0" />
                            </font>
@@ -52,7 +52,7 @@
                               </LinearGradient>
                            </fill>
                         </Text>
-                        <HBox layoutX="160.0" layoutY="268.0" prefHeight="514.0" prefWidth="1057.0" spacing="56.0">
+                        <HBox layoutX="130.0" layoutY="268.0" prefHeight="514.0" prefWidth="1057.0" spacing="56.0">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
@@ -283,14 +283,14 @@
                               </VBox>
                            </children>
                         </HBox>
-                        <Button fx:id="SignInButton" layoutX="1101.0" layoutY="69.0" mnemonicParsing="false" onAction="#goToSignIn" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: none;" styleClass="sing-up" text="Sign in " textFill="#fcfcfc">
+                        <Button fx:id="SignInButton" layoutX="1076.0" layoutY="69.0" mnemonicParsing="false" onAction="#goToSignIn" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: none;" styleClass="sing-up" text="Sign in " textFill="#fcfcfc">
                            <font>
                               <Font name="Noto Serif Condensed" size="20.0" />
                            </font>
                         </Button>
                      </children>
                   </Pane>
-                  <ButtonBar layoutX="141.0" layoutY="64.0" prefHeight="47.0" prefWidth="360.0">
+                  <ButtonBar layoutX="111.0" layoutY="64.0" prefHeight="47.0" prefWidth="360.0">
                      <buttons>
                         <Button fx:id="InicioButtonNav" mnemonicParsing="false" onAction="#goToInicio" style="-fx-background-color: #252525;" text="Inicio" textFill="#fcfcfc">
                            <font>
@@ -309,7 +309,7 @@
                         </Button>
                      </buttons>
                   </ButtonBar>
-                  <ImageView fitHeight="101.0" fitWidth="95.0" layoutX="61.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="101.0" fitWidth="95.0" layoutX="31.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../img/LogoCorto.png" />
                      </image>
