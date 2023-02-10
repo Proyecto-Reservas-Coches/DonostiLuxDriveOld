@@ -18,20 +18,20 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.donostiluxdrive.SegurosController">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.donostiluxdrive.SegurosController">
    <content>
-      <AnchorPane prefHeight="950.0" prefWidth="1300.0" styleClass="backgroundColor" stylesheets="@estilo.css">
+      <AnchorPane prefHeight="850.0" prefWidth="1350.0" styleClass="backgroundColor" stylesheets="@estilo.css">
          <children>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <ImageView fitHeight="1033.0" fitWidth="1367.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="1033.0" fitWidth="1350.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../img/fondo-seguros.png" />
                      </image>
                   </ImageView>
-                  <Pane layoutY="-2.0" prefHeight="1000.0" prefWidth="1351.0" style="-fx-background-color: rgba(15, 15, 15, 0.8);">
+                  <Pane layoutY="-2.0" prefHeight="1000.0" prefWidth="1350.0" style="-fx-background-color: rgba(15, 15, 15, 0.8);">
                      <children>
-                        <Text layoutX="130.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titular" text="SEGUROS">
+                        <Text layoutX="155.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titular" text="SEGUROS">
                            <font>
                               <Font name="Impact" size="77.0" />
                            </font>
@@ -40,7 +40,7 @@
                                  <stops>
                                     <Stop>
                                        <color>
-                                          <Color red="0.5" green="0.10499999672174454" blue="0.10499999672174454" />
+                                          <Color red="0.501960813999176" green="0.10588235408067703" blue="0.10588235408067703" />
                                        </color>
                                     </Stop>
                                     <Stop offset="1.0">
@@ -52,7 +52,7 @@
                               </LinearGradient>
                            </fill>
                         </Text>
-                        <HBox layoutX="130.0" layoutY="268.0" prefHeight="514.0" prefWidth="1057.0" spacing="56.0">
+                        <HBox layoutX="160.0" layoutY="242.0" prefHeight="514.0" prefWidth="1057.0" spacing="56.0">
                            <opaqueInsets>
                               <Insets />
                            </opaqueInsets>
@@ -156,6 +156,37 @@
                                                       <Insets left="36.0" right="20.0" />
                                                    </VBox.margin>
                                                 </Hyperlink>
+                                                <VBox prefHeight="358.0" prefWidth="282.0">
+                                                   <children>
+                                                      <Hyperlink disable="true" layoutX="18.0" layoutY="152.0" lineSpacing="1.5" prefHeight="61.0" prefWidth="226.0" text="■  Seguro de accidentes personales" textFill="WHITE" wrapText="true">
+                                                         <font>
+                                                            <Font name="Noto Sans Condensed" size="17.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets left="36.0" right="20.0" />
+                                                         </VBox.margin>
+                                                      </Hyperlink>
+                                                      <Hyperlink disable="true" layoutX="10.0" layoutY="164.0" lineSpacing="1.5" prefHeight="50.0" prefWidth="226.0" text="■  Asistencia en carretera" textFill="WHITE" wrapText="true">
+                                                         <font>
+                                                            <Font name="Noto Sans Condensed" size="17.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets left="36.0" right="20.0" />
+                                                         </VBox.margin>
+                                                      </Hyperlink>
+                                                      <Hyperlink disable="true" layoutX="10.0" layoutY="176.0" lineSpacing="1.5" prefHeight="53.0" prefWidth="226.0" text="■  Otros seguros de alquiler" textFill="WHITE" wrapText="true">
+                                                         <font>
+                                                            <Font name="Noto Sans Condensed" size="17.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets left="36.0" right="20.0" />
+                                                         </VBox.margin>
+                                                      </Hyperlink>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </VBox>
                                                 <Hyperlink lineSpacing="1.5" prefHeight="63.0" prefWidth="226.0" text="■  Seguro de exención parcial de responsabilidad de daños" textFill="WHITE" wrapText="true">
                                                    <font>
                                                       <Font name="Noto Sans Condensed" size="17.0" />
@@ -283,14 +314,19 @@
                               </VBox>
                            </children>
                         </HBox>
-                        <Button fx:id="SignInButton" layoutX="1076.0" layoutY="69.0" mnemonicParsing="false" onAction="#goToSignIn" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: none;" styleClass="sing-up" text="Sign in " textFill="#fcfcfc">
+                        <Button fx:id="SignInButton" layoutX="1103.0" layoutY="60.0" mnemonicParsing="false" onAction="#goToSignIn" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: none;" styleClass="sing-up" text="Sign in " textFill="#fcfcfc">
                            <font>
                               <Font name="Noto Serif Condensed" size="20.0" />
                            </font>
                         </Button>
+                        <ImageView fitHeight="101.0" fitWidth="95.0" layoutX="52.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/LogoCorto.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </Pane>
-                  <ButtonBar layoutX="111.0" layoutY="64.0" prefHeight="47.0" prefWidth="360.0">
+                  <ButtonBar layoutX="136.0" layoutY="59.0" prefHeight="47.0" prefWidth="360.0">
                      <buttons>
                         <Button fx:id="InicioButtonNav" mnemonicParsing="false" onAction="#goToInicio" style="-fx-background-color: #252525;" text="Inicio" textFill="#fcfcfc">
                            <font>
@@ -309,11 +345,6 @@
                         </Button>
                      </buttons>
                   </ButtonBar>
-                  <ImageView fitHeight="101.0" fitWidth="95.0" layoutX="31.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../img/LogoCorto.png" />
-                     </image>
-                  </ImageView>
                </children>
             </AnchorPane>
          </children>
