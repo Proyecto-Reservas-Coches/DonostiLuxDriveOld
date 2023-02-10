@@ -32,38 +32,69 @@ public class InicioController {
     private Button SignInButton;
 
     @FXML
-    void goToCoches() throws IOException {
-        CochesButtonNav.setOnAction(event -> {
-            try {
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("InfoCoche-view.fxml"));
-                Parent root = fxmlLoader.load();
-                Scene scene = new Scene(root);
-                stage.setScene(scene);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
+    void goToCoches()   {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("Coches-view.fxml"));
+            Scene scene = new Scene(root);
+            stage = (Stage) CochesButtonNav.getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
-
-    public void setStage(Stage stage) {
-        this.stage = stage;
-    }
-
 
 
 
     @FXML
     void goToInicio(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("Inicio-view.fxml"));
+            Scene scene = new Scene(root);
+            stage = (Stage) InicioButtonNav.getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("Coches-view.fxml"));
+            Scene scene = new Scene(root);
+            stage = (Stage) CochesButton.getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 
     @FXML
     void goToSeguros(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("Seguros-view.fxml"));
+            Scene scene = new Scene(root);
+            stage = (Stage) SegurosButtonNav.getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 
     @FXML
     void goToSignIn(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("LoginSignup-view.fxml"));
+            Scene scene = new Scene(root);
+            stage = (Stage) SignInButton.getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 
