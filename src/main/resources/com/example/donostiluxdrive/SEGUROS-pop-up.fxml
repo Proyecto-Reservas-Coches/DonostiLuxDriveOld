@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="700.0" prefWidth="1200.0" styleClass="backgroundColor" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" styleClass="backgroundColor" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.donostiluxdrive.SegurosPopUpController">
    <children>
       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
          <children>
@@ -255,7 +255,7 @@
                         </VBox>
                      </children>
                   </HBox>
-                  <Button layoutX="548.0" layoutY="612.0" mnemonicParsing="false" stylesheets="@estilo.css" text="CERRAR" textFill="#681212">
+                  <Button fx:id="cerrarSeguroButton" layoutX="548.0" layoutY="612.0" mnemonicParsing="false" onAction="#goToReserva" stylesheets="@estilo.css" text="CERRAR" textFill="#681212">
                      <font>
                         <Font name="Noto Sans Condensed Bold" size="21.0" />
                      </font>

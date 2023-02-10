@@ -26,17 +26,17 @@
                <children>
                   <ButtonBar layoutX="131.0" layoutY="54.0" prefHeight="47.0" prefWidth="360.0">
                      <buttons>
-                        <Button fx:id="InicioButtonNav" mnemonicParsing="false" onAction="#goToInicio" style="-fx-background-color: #252525;" styleClass="active" text="Inicio" textFill="#fcfcfc">
+                        <Button fx:id="inicioButtonNav" mnemonicParsing="false" onAction="#goToInicio" style="-fx-background-color: #252525;" styleClass="active" text="Inicio" textFill="#fcfcfc">
                            <font>
                               <Font name="Noto Serif Condensed Bold" size="21.0" />
                            </font>
                         </Button>
-                        <Button fx:id="CochesButtonNav" graphicTextGap="10.0" mnemonicParsing="false" onAction="#goToCoches" style="-fx-background-color: #252525;" text="Coches" textFill="#fcfcfc">
+                        <Button fx:id="cochesButtonNav" graphicTextGap="10.0" mnemonicParsing="false" onAction="#goToCoches" style="-fx-background-color: #252525;" text="Coches" textFill="#fcfcfc">
                            <font>
                               <Font name="Noto Serif Condensed" size="20.0" />
                            </font>
                         </Button>
-                      <Button fx:id="SegurosButtonNav" mnemonicParsing="false" onAction="#goToSeguros" prefWidth="132.0" style="-fx-background-color: #252525;" text="Seguros" textFill="#fcfcfc">
+                      <Button fx:id="segurosButtonNav" mnemonicParsing="false" onAction="#goToSeguros" prefWidth="132.0" style="-fx-background-color: #252525;" text="Seguros" textFill="#fcfcfc">
                            <font>
                               <Font name="Noto Serif Condensed" size="20.0" />
                            </font>
@@ -53,14 +53,14 @@
                         <Font name="Impact" size="77.0" />
                      </font>
                   </Text>
-                  <Button fx:id="CochesButton" layoutX="151.0" layoutY="483.0" mnemonicParsing="false" onAction="#goToCoches" styleClass="boton-inicio" stylesheets="@estilo.css" text="MIRAR NUESTRO CATÁLOGO!" textFill="#722424">
+                  <Button fx:id="cochesButton" layoutX="151.0" layoutY="483.0" mnemonicParsing="false" onAction="#goToCoches" styleClass="boton-inicio" stylesheets="@estilo.css" text="MIRAR NUESTRO CATÁLOGO!" textFill="#722424">
                      <font>
                         <Font name="Noto Sans Condensed Bold" size="21.0" />
                      </font>
                   </Button>
                   <ButtonBar layoutX="956.0" layoutY="55.0" prefHeight="45.0" prefWidth="217.0">
                      <buttons>
-                        <Button fx:id="SignInButton" mnemonicParsing="false" onAction="#goToSignIn" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: none;" styleClass="sing-up" text="Sign in " textFill="#fcfcfc">
+                        <Button fx:id="signInButton" mnemonicParsing="false" onAction="#goToSignIn" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: none;" styleClass="sing-up" text="Sign in " textFill="#fcfcfc">
                            <font>
                               <Font name="Noto Serif Condensed" size="20.0" />
                            </font>
