@@ -68,17 +68,17 @@
                               <Font name="Impact" size="40.0" />
                            </font>
                         </Label>
-                        <Button fx:id="MinusButton" layoutX="98.0" layoutY="176.0" mnemonicParsing="false" onAction="#goToBeforeImage" style="-fx-background-color: 255, 255, 255, 255;" text="&lt;" textFill="WHITE">
+                        <Button fx:id="minusButton" layoutX="98.0" layoutY="176.0" mnemonicParsing="false" onAction="#goToBeforeImage" style="-fx-background-color: 255, 255, 255, 255;" text="&lt;" textFill="WHITE">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Button>
-                        <Button fx:id="MayusButton" layoutX="531.0" layoutY="176.0" mnemonicParsing="false" onAction="#goToNextImage" style="-fx-background-color: 255, 255, 255, 255;" text="&gt;" textFill="WHITE">
+                        <Button fx:id="mayusButton" layoutX="531.0" layoutY="176.0" mnemonicParsing="false" onAction="#goToNextImage" style="-fx-background-color: 255, 255, 255, 255;" text="&gt;" textFill="WHITE">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Button>
-                        <Button fx:id="AlquilarButton" layoutX="1022.0" layoutY="27.0" mnemonicParsing="false" onAction="#goToReserva" prefHeight="47.0" prefWidth="176.0" style="-fx-background-color: #9e4444;" text="ALQUILAR AHORA" textFill="WHITE">
+                        <Button fx:id="alquilarButton" layoutX="1022.0" layoutY="27.0" mnemonicParsing="false" onAction="#goToReserva" prefHeight="47.0" prefWidth="176.0" style="-fx-background-color: #9e4444;" text="ALQUILAR AHORA" textFill="WHITE">
                            <font>
                               <Font name="Impact" size="20.0" />
                            </font>
@@ -104,7 +104,7 @@
             </Pane>
             <ButtonBar layoutX="920.0" layoutY="55.0" prefHeight="45.0" prefWidth="220.0">
                <buttons>
-                  <Button fx:id="SignInButton" mnemonicParsing="false" onAction="#goToSignIn" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: #9e4444;" styleClass="sing-up" text="Sign in " textFill="#fcfcfc">
+                  <Button fx:id="signInButton" mnemonicParsing="false" onAction="#goToSignIn" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: #9e4444;" styleClass="sing-up" text="Sign in " textFill="#fcfcfc">
                      <font>
                         <Font name="Impact" size="20.0" />
                      </font>
@@ -113,17 +113,17 @@
             </ButtonBar>
             <ButtonBar layoutX="131.0" layoutY="54.0" prefHeight="47.0" prefWidth="360.0">
                <buttons>
-                  <Button fx:id="InicioButtonNav" mnemonicParsing="false" onAction="#goToInicio" style="-fx-background-color: #252525;" styleClass="active" text="Inicio" textFill="#fcfcfc">
+                  <Button fx:id="inicioButtonNav" mnemonicParsing="false" onAction="#goToInicio" style="-fx-background-color: #252525;" styleClass="active" text="Inicio" textFill="#fcfcfc">
                      <font>
                         <Font name="Noto Serif Condensed" size="21.0" />
                      </font>
                   </Button>
-                  <Button fx:id="CochesButtonNav" graphicTextGap="10.0" mnemonicParsing="false" onAction="#goToCoches" style="-fx-background-color: #252525;" text="Coches" textFill="#fcfcfc">
+                  <Button fx:id="cochesButtonNav" graphicTextGap="10.0" mnemonicParsing="false" onAction="#goToCoches" style="-fx-background-color: #252525;" text="Coches" textFill="#fcfcfc">
                      <font>
                         <Font name="Noto Serif Condensed" size="20.0" />
                      </font>
                   </Button>
-                  <Button fx:id="SegurosButtonNav" mnemonicParsing="false" onAction="#goToSeguros" prefWidth="132.0" style="-fx-background-color: #252525;" text="Seguros" textFill="#fcfcfc">
+                  <Button fx:id="segurosButtonNav" mnemonicParsing="false" onAction="#goToSeguros" prefWidth="132.0" style="-fx-background-color: #252525;" text="Seguros" textFill="#fcfcfc">
                      <font>
                         <Font name="Noto Serif Condensed" size="20.0" />
                      </font>
