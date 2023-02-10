@@ -3,29 +3,34 @@ public class Usuario {
     //Declaracion de variables
     int id_usuario;
     tipo tipo_usuario;
-    String dni;
-    String email;
-    String contrasena;
     String nombre;
     String apellido;
+    String email;
+    String contrasena;
 
     String telefono;
+    String dni;
     //enum tipo {n, a};
 
 
 
-    Usuario(int id, tipo tp, String nmbr, String apll, String mail,String contra, String tlf )   {
+    Usuario(tipo tp, String nmbr, String apll, String mail,String contra, String tlf ) {
+        this.tipo_usuario = tp;
+        this.nombre=nmbr;
+        this.apellido=apll;
+        this.email=mail;
+        this.contrasena=contra;
+        this.telefono=tlf;
+    }
 
-        id_usuario=id;
-        tipo_usuario = tp;
-        nombre=nmbr;
-        apellido=apll;
-        email=mail;
-        contrasena=contra;
-        telefono=tlf;
-
-
-
+    Usuario(int id, tipo tp, String nmbr, String apll, String mail,String contra, String tlf ) {
+        this.id_usuario=id;
+        this.tipo_usuario = tp;
+        this.nombre=nmbr;
+        this.apellido=apll;
+        this.email=mail;
+        this.contrasena=contra;
+        this.telefono=tlf;
     }
     enum tipo {n, a};
     //Metodos setter and getter
