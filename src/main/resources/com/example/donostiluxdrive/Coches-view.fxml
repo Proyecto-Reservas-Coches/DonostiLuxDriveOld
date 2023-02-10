@@ -21,7 +21,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<ScrollPane prefHeight="750.0" prefWidth="1300.0" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<ScrollPane prefHeight="750.0" prefWidth="1300.0" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.donostiluxdrive.CochesController">
    <content>
       <AnchorPane prefHeight="1000.0" prefWidth="1280.0" style="-fx-background-color: rgba(15, 15, 15, 0.651);" stylesheets="@estilo.css">
          <children>
@@ -56,17 +56,17 @@
                </children></Pane>
             <ButtonBar layoutX="131.0" layoutY="55.0" prefHeight="47.0" prefWidth="360.0">
                <buttons>
-                  <Button fx:id="InicioButtonNav" mnemonicParsing="false" onAction="#goToInicio" style="-fx-background-color: #252525;" text="Inicio" textFill="#fcfcfc">
+                  <Button fx:id="inicioButtonNav" mnemonicParsing="false" onAction="#goToInicio" style="-fx-background-color: #252525;" text="Inicio" textFill="#fcfcfc">
                      <font>
                         <Font name="Noto Serif Condensed" size="21.0" />
                      </font>
                   </Button>
-                  <Button fx:id="CochesButtonNav" graphicTextGap="10.0" mnemonicParsing="false" onAction="#goToCoches" style="-fx-background-color: #252525;" styleClass="active" text="Coches" textFill="#fcfcfc">
+                  <Button fx:id="cochesButtonNav" graphicTextGap="10.0" mnemonicParsing="false" onAction="#goToCoches" style="-fx-background-color: #252525;" styleClass="active" text="Coches" textFill="#fcfcfc">
                      <font>
                         <Font name="Noto Serif Condensed Bold" size="20.0" />
                      </font>
                   </Button>
-                  <Button fx:id="SegurosButtonNav" mnemonicParsing="false" onAction="#goToSeguros" prefWidth="132.0" style="-fx-background-color: #252525;" text="Seguros" textFill="#fcfcfc">
+                  <Button fx:id="segurosButtonNav" mnemonicParsing="false" onAction="#goToSeguros" prefWidth="132.0" style="-fx-background-color: #252525;" text="Seguros" textFill="#fcfcfc">
                      <font>
                         <Font name="Noto Serif Condensed" size="20.0" />
                      </font>
@@ -80,7 +80,7 @@
             </ImageView>
             <ButtonBar layoutX="920.0" layoutY="55.0" prefHeight="45.0" prefWidth="220.0">
                <buttons>
-                  <Button fx:id="SignInButton" mnemonicParsing="false" onAction="#goToSignIn" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: none;" styleClass="sing-up" text="Sign in " textFill="#fcfcfc">
+                  <Button fx:id="signInButton" mnemonicParsing="false" onAction="#goToSignIn" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: none;" styleClass="sing-up" text="Sign in " textFill="#fcfcfc">
                      <font>
                         <Font name="Noto Serif Condensed" size="20.0" />
                      </font>
@@ -102,7 +102,7 @@
                      <children>
                         <ImageView fitHeight="150.0" fitWidth="264.0" pickOnBounds="true" preserveRatio="true" styleClass=".image-view">
                            <image>
-                              <Image url="@../../../img/ferrari-812GTSS.png" />
+                              <Image url="@../../../img/ferrari812GTSS.png" />
                            </image>
                         </ImageView>
                         <VBox prefHeight="200.0" prefWidth="100.0">
@@ -140,12 +140,12 @@
                         </VBox>
                         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #9e3d3d; -fx-border-width: 2px; -fx-border-radius: 4px; -fx-background-radius: 7px;" text="ALQUILAR!" textFill="#722424">
+                              <Button fx:id="alquilarCoche0_0Button" mnemonicParsing="false" onAction="#goToReserva" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #9e3d3d; -fx-border-width: 2px; -fx-border-radius: 4px; -fx-background-radius: 7px;" text="ALQUILAR!" textFill="#722424">
                                  <font>
                                     <Font name="Impact" size="17.0" />
                                  </font>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #697cd0; -fx-background-radius: 8px; -fx-border-radius: 4px; -fx-border-width: 2px;" styleClass="borton-info" text="VER MÁS INFO" textFill="#303c72">
+                              <Button fx:id="infoCoche0_0Button" mnemonicParsing="false" onAction="#goToInfoCoche0_0" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #697cd0; -fx-background-radius: 8px; -fx-border-radius: 4px; -fx-border-width: 2px;" styleClass="borton-info" text="VER MÁS INFO" textFill="#303c72">
                                  <font>
                                     <Font name="Impact" size="17.0" />
                                  </font>
@@ -199,12 +199,12 @@
                         </VBox>
                         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #9e3d3d; -fx-border-width: 2px; -fx-border-radius: 4px; -fx-background-radius: 7px;" text="ALQUILAR!" textFill="#722424">
+                              <Button fx:id="alquilarCoche2_0Button" mnemonicParsing="false" onAction="#goToReserva" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #9e3d3d; -fx-border-width: 2px; -fx-border-radius: 4px; -fx-background-radius: 7px;" text="ALQUILAR!" textFill="#722424">
                                  <font>
                                     <Font name="Impact" size="17.0" />
                                  </font>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #697cd0; -fx-background-radius: 8px; -fx-border-radius: 4px; -fx-border-width: 2px;" styleClass="borton-info" text="VER MÁS INFO" textFill="#303c72">
+                              <Button fx:id="infoCoche2_0Button" mnemonicParsing="false" onAction="#goToInfoCoche2_0" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #697cd0; -fx-background-radius: 8px; -fx-border-radius: 4px; -fx-border-width: 2px;" styleClass="borton-info" text="VER MÁS INFO" textFill="#303c72">
                                  <font>
                                     <Font name="Impact" size="17.0" />
                                  </font>
@@ -258,12 +258,12 @@
                         </VBox>
                         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #9e3d3d; -fx-border-width: 2px; -fx-border-radius: 4px; -fx-background-radius: 7px;" text="ALQUILAR!" textFill="#722424">
+                              <Button fx:id="alquilarCoche1_0Button" mnemonicParsing="false" onAction="#goToReserva" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #9e3d3d; -fx-border-width: 2px; -fx-border-radius: 4px; -fx-background-radius: 7px;" text="ALQUILAR!" textFill="#722424">
                                  <font>
                                     <Font name="Impact" size="17.0" />
                                  </font>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #697cd0; -fx-background-radius: 8px; -fx-border-radius: 4px; -fx-border-width: 2px;" styleClass="borton-info" text="VER MÁS INFO" textFill="#303c72">
+                              <Button fx:id="infoCoche1_0Button" mnemonicParsing="false" onAction="#goToInfoCoche1_0" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #697cd0; -fx-background-radius: 8px; -fx-border-radius: 4px; -fx-border-width: 2px;" styleClass="borton-info" text="VER MÁS INFO" textFill="#303c72">
                                  <font>
                                     <Font name="Impact" size="17.0" />
                                  </font>
@@ -314,12 +314,12 @@
                         </VBox>
                         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #9e3d3d; -fx-border-width: 2px; -fx-border-radius: 4px; -fx-background-radius: 7px;" text="ALQUILAR!" textFill="#722424">
+                              <Button fx:id="alquilarCoche0_1Button" mnemonicParsing="false" onAction="#goToReserva" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #9e3d3d; -fx-border-width: 2px; -fx-border-radius: 4px; -fx-background-radius: 7px;" text="ALQUILAR!" textFill="#722424">
                                  <font>
                                     <Font name="Impact" size="17.0" />
                                  </font>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #697cd0; -fx-background-radius: 8px; -fx-border-radius: 4px; -fx-border-width: 2px;" styleClass="borton-info" text="VER MÁS INFO" textFill="#303c72">
+                              <Button fx:id="infoCoche0_1Button" mnemonicParsing="false" onAction="#goToInfoCoche0_1" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #697cd0; -fx-background-radius: 8px; -fx-border-radius: 4px; -fx-border-width: 2px;" styleClass="borton-info" text="VER MÁS INFO" textFill="#303c72">
                                  <font>
                                     <Font name="Impact" size="17.0" />
                                  </font>
@@ -335,7 +335,7 @@
                      <children>
                         <ImageView fitHeight="150.0" fitWidth="264.0" pickOnBounds="true" preserveRatio="true" styleClass=".image-view">
                            <image>
-                              <Image url="@../../../img/Bugatti%20chiron.png" />
+                              <Image url="@../../../img/Bugattichiron.png" />
                            </image>
                         </ImageView>
                         <VBox prefHeight="200.0" prefWidth="100.0">
@@ -373,12 +373,12 @@
                         </VBox>
                         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #9e3d3d; -fx-border-width: 2px; -fx-border-radius: 4px; -fx-background-radius: 7px;" text="ALQUILAR!" textFill="#722424">
+                              <Button fx:id="alquilarCoche1_1Button" mnemonicParsing="false" onAction="#goToReserva" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #9e3d3d; -fx-border-width: 2px; -fx-border-radius: 4px; -fx-background-radius: 7px;" text="ALQUILAR!" textFill="#722424">
                                  <font>
                                     <Font name="Impact" size="17.0" />
                                  </font>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #697cd0; -fx-background-radius: 8px; -fx-border-radius: 4px; -fx-border-width: 2px;" styleClass="borton-info" text="VER MÁS INFO" textFill="#303c72">
+                              <Button fx:id="infoCoche1_1Button" mnemonicParsing="false" onAction="#goToInfoCoche1_1" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #697cd0; -fx-background-radius: 8px; -fx-border-radius: 4px; -fx-border-width: 2px;" styleClass="borton-info" text="VER MÁS INFO" textFill="#303c72">
                                  <font>
                                     <Font name="Impact" size="17.0" />
                                  </font>
@@ -432,12 +432,12 @@
                         </VBox>
                         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
                            <children>
-                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #9e3d3d; -fx-border-width: 2px; -fx-border-radius: 4px; -fx-background-radius: 7px;" text="ALQUILAR!" textFill="#722424">
+                              <Button fx:id="alquilarCoche2_1Button" mnemonicParsing="false" onAction="#goToReserva" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #9e3d3d; -fx-border-width: 2px; -fx-border-radius: 4px; -fx-background-radius: 7px;" text="ALQUILAR!" textFill="#722424">
                                  <font>
                                     <Font name="Impact" size="17.0" />
                                  </font>
                               </Button>
-                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #697cd0; -fx-background-radius: 8px; -fx-border-radius: 4px; -fx-border-width: 2px;" styleClass="borton-info" text="VER MÁS INFO" textFill="#303c72">
+                              <Button fx:id="infoCoche2_1Button" mnemonicParsing="false" onAction="#goToInfoCoche2_1" prefHeight="25.0" prefWidth="220.0" style="-fx-border-color: #697cd0; -fx-background-radius: 8px; -fx-border-radius: 4px; -fx-border-width: 2px;" styleClass="borton-info" text="VER MÁS INFO" textFill="#303c72">
                                  <font>
                                     <Font name="Impact" size="17.0" />
                                  </font>
