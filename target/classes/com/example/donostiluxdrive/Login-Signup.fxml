@@ -12,7 +12,8 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane minWidth="1225.0" prefHeight="800.0" prefWidth="1225.0" style="-fx-min-width: 900px; -fx-min-height: 500;" styleClass="backgroundColor" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="v">
+
+<AnchorPane minWidth="1225.0" prefHeight="800.0" prefWidth="1225.0" style="-fx-min-width: 900px; -fx-min-height: 500;" styleClass="backgroundColor" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.donostiluxdrive.LoginSignupController">
    <children>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
          <children>
@@ -21,17 +22,17 @@
                   <Rectangle2D />
                </viewport>
                <image>
-                  <Image url="@img/oliur-ovrOPhu8vSw-unsplash.jpg" />
+                  <Image url="@../../../img/LogoCorto.png" />
                </image>
             </ImageView>
             <Pane prefHeight="817.0" prefWidth="1225.0" style="-fx-background-color: rgba(15, 15, 15, 0.9);">
                <children>
                   <ImageView fitHeight="126.0" fitWidth="123.0" layoutX="571.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@img/1.png" />
+                        <Image url="@../../../img/LogoCorto.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="934.0" layoutY="463.0" mnemonicParsing="false" style="-fx-background-radius: 7px; -fx-border-radius: 4px;" stylesheets="@estilo.css" text="Log in" textFill="#9e4444">
+                  <Button fx:id="loginButton" layoutX="934.0" layoutY="463.0" mnemonicParsing="false" onAction="#Login" style="-fx-background-radius: 7px; -fx-border-radius: 4px;" stylesheets="@estilo.css" text="Log in" textFill="#9e4444">
                      <font>
                         <Font name="Noto Sans Condensed Bold" size="21.0" />
                      </font>
@@ -46,19 +47,19 @@
                         <Font name="Noto Sans Condensed" size="28.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="856.0" layoutY="344.0" prefHeight="30.0" prefWidth="168.0" />
+                  <TextField fx:id="logEmailTf" layoutX="856.0" layoutY="344.0" prefHeight="30.0" prefWidth="168.0" />
                   <Label layoutX="704.0" layoutY="399.0" text="Contraseña:" textFill="#eeeeee">
                      <font>
                         <Font name="Noto Sans Condensed" size="28.0" />
                      </font>
                   </Label>
-                  <TextField accessibleRole="PASSWORD_FIELD" layoutX="856.0" layoutY="402.0" prefHeight="30.0" prefWidth="168.0" />
+                  <TextField fx:id="logContraTf" accessibleRole="PASSWORD_FIELD" layoutX="856.0" layoutY="402.0" prefHeight="30.0" prefWidth="168.0" />
                   <Label layoutX="894.0" layoutY="242.0" text="LOG IN" textFill="#9c4444" underline="true">
                      <font>
                         <Font name="Impact" size="40.0" />
                      </font>
                   </Label>
-                  <Button layoutX="383.0" layoutY="639.0" mnemonicParsing="false" style="-fx-background-radius: 4px; -fx-border-radius: 4px;" styleClass="boton-inicio" stylesheets="@estilo.css" text="Sing Up" textFill="#9e4444">
+                  <Button fx:id="signUpButton" layoutX="383.0" layoutY="639.0" mnemonicParsing="false" onAction="#Singup" style="-fx-background-radius: 4px; -fx-border-radius: 4px;" styleClass="boton-inicio" stylesheets="@estilo.css" text="Sing Up" textFill="#9e4444">
                      <font>
                         <Font name="Noto Sans Condensed Bold" size="21.0" />
                      </font>
@@ -68,13 +69,13 @@
                         <Font name="Noto Sans Condensed" size="28.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="310.0" layoutY="345.0" prefHeight="30.0" prefWidth="168.0" />
+                  <TextField fx:id="singNombreTf" layoutX="310.0" layoutY="345.0" prefHeight="30.0" prefWidth="168.0" />
                   <Label layoutX="198.0" layoutY="399.0" text="Apellido:" textFill="#eeeeee">
                      <font>
                         <Font name="Noto Sans Condensed" size="28.0" />
                      </font>
                   </Label>
-                  <TextField accessibleRole="PASSWORD_FIELD" layoutX="310.0" layoutY="403.0" prefHeight="30.0" prefWidth="168.0" />
+                  <TextField fx:id="singApellidoTf" accessibleRole="PASSWORD_FIELD" layoutX="310.0" layoutY="403.0" prefHeight="30.0" prefWidth="168.0" />
                   <Label layoutX="333.0" layoutY="242.0" text="Sing Up" textFill="#eeeeee" underline="true">
                      <font>
                         <Font name="Impact" size="40.0" />
@@ -85,19 +86,19 @@
                         <Font name="Noto Sans Condensed" size="28.0" />
                      </font>
                   </Label>
-                  <TextField accessibleRole="PASSWORD_FIELD" layoutX="310.0" layoutY="462.0" prefHeight="30.0" prefWidth="168.0" />
+                  <TextField fx:id="singEmailTf" accessibleRole="PASSWORD_FIELD" layoutX="310.0" layoutY="462.0" prefHeight="30.0" prefWidth="168.0" />
                   <Label layoutX="164.0" layoutY="516.0" text="Contraseña:" textFill="#eeeeee">
                      <font>
                         <Font name="Noto Sans Condensed" size="28.0" />
                      </font>
                   </Label>
-                  <TextField accessibleRole="PASSWORD_FIELD" layoutX="310.0" layoutY="521.0" prefHeight="30.0" prefWidth="168.0" />
+                  <TextField fx:id="singContraTf" accessibleRole="PASSWORD_FIELD" layoutX="310.0" layoutY="521.0" prefHeight="30.0" prefWidth="168.0" />
                   <Label layoutX="192.0" layoutY="575.0" text="Teléfono:" textFill="#eeeeee">
                      <font>
                         <Font name="Noto Sans Condensed" size="28.0" />
                      </font>
                   </Label>
-                  <TextField accessibleRole="PASSWORD_FIELD" layoutX="310.0" layoutY="580.0" prefHeight="30.0" prefWidth="168.0" />
+                  <TextField fx:id="singTelfTF" accessibleRole="PASSWORD_FIELD" layoutX="310.0" layoutY="580.0" prefHeight="30.0" prefWidth="168.0" />
                </children>
             </Pane>
          </children>
