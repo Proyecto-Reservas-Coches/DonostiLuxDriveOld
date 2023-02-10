@@ -3,6 +3,7 @@ public class Usuario {
     //Declaracion de variables
     int id_usuario;
     tipo tipo_usuario;
+    String dni;
     String email;
     String contrasena;
     String nombre;
