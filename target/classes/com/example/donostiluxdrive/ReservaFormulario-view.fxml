@@ -54,32 +54,32 @@
                         <Font name="Noto Sans Condensed" size="28.0" />
                      </font>
                   </Label>
-                  <ComboBox fx:id="marcaCombo" onAction="#listaMarca" prefHeight="30.0" prefWidth="168.0" GridPane.columnIndex="1" />
+                  <ComboBox fx:id="marcaCombo" prefHeight="30.0" prefWidth="168.0" GridPane.columnIndex="1" />
                   <Label text="Modelo:" textFill="#eeeeee" GridPane.rowIndex="1">
                      <font>
                         <Font name="Noto Sans Condensed" size="28.0" />
                      </font>
                   </Label>
-                  <ComboBox fx:id="modeloCombo" onAction="#listaModelo" prefHeight="30.0" prefWidth="168.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="modeloCombo" prefHeight="30.0" prefWidth="168.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <Label text="Color:" textFill="#eeeeee" GridPane.rowIndex="2">
                      <font>
                         <Font name="Noto Sans Condensed" size="28.0" />
                      </font>
                   </Label>
-                  <ComboBox fx:id="colorCombo" onAction="#listaColor" prefHeight="30.0" prefWidth="168.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <ComboBox fx:id="colorCombo" prefHeight="30.0" prefWidth="168.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                   <Label text="Fecha Inicio:" textFill="#eeeeee" GridPane.rowIndex="3">
                      <font>
                         <Font name="Noto Sans Condensed" size="28.0" />
                      </font>
                   </Label>
-                  <DatePicker prefHeight="30.0" prefWidth="168.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <DatePicker fx:id="fechaIn" prefHeight="30.0" prefWidth="168.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                   <Label text="Fecha Fin:" textFill="#eeeeee" GridPane.rowIndex="4">
                      <font>
                         <Font name="Noto Sans Condensed" size="28.0" />
                      </font>
                   </Label>
-                  <DatePicker prefHeight="30.0" prefWidth="168.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                  <ComboBox fx:id="seguroCombo" onAction="#listaSeguro" prefHeight="30.0" prefWidth="168.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <DatePicker fx:id="fechaFin" prefHeight="30.0" prefWidth="168.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <ComboBox fx:id="seguroCombo" prefHeight="30.0" prefWidth="168.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                   <Label text="Precio Total: " textFill="#eeeeee" GridPane.rowIndex="8">
                      <font>
                         <Font name="Noto Sans Condensed Bold" size="28.0" />
